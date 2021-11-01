@@ -1,0 +1,24 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.div-footer {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include tablet {
+        flex-direction: row;
+    }
+    a {
+        display: flex;
+        align-items: center;
+        @include tablet {
+            margin-right: 2rem;
+        }
+        p {
+            color: $blanco;
+        }
+    }
+}

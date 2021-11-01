@@ -1,0 +1,78 @@
+.body-actividades {
+    background-image: linear-gradient(to bottom, transparent, rgba($color: $verde_claro, $alpha: .6));
+}
+
+.contenedor-actividades { 
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    .actividad {
+        text-align: center;
+        .actividad--imagen {
+            width: 30rem;
+            border-radius: 50%
+        }
+        &:hover {
+            cursor: pointer;
+        }
+        @include mediaQueryMax($tablet) {
+            margin-bottom: 4rem;
+        }
+    }
+    @include tablet {
+        @include grid(2,3rem);
+    }
+    @include desktop {
+        @include grid(3,3rem);
+    }
+}
+
+.overlay {
+    position: fixed;
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: grid;
+    place-items: center;
+    overflow-y: auto;
+    .info-actividad {
+        background-color: $blanco;
+        max-width: 80rem;
+        padding: 2rem;
+        margin: 2rem;
+        border-radius: 2rem;
+        border: .5rem $cafe solid;
+        text-align: center;
+        h2 {
+            color: $verde_obscuro;
+            font-size: 2.5rem;
+        }
+        p {
+            text-align: justify;
+            font-size: 1.7rem;
+            line-height: 2.8rem;
+        }
+        img {
+            width: 40rem;
+        }
+        span {
+            display: block;
+            color: red;
+            font-size: 1.5rem;
+            margin-top: 1rem;
+        }
+        button {
+            display: block;
+            margin: auto;
+            margin-top: 1rem;
+            padding: .5rem 1rem;
+            font-size: 1.5rem;
+            background-color: $verde_claro;
+            border: none;
+            cursor: pointer;
+            &:hover {
+                background-color: rgba($color: $verde_claro, $alpha: .9);
+            }
+        }
+    }
+}

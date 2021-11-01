@@ -1,0 +1,17 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    font-family: $fuentePrincipal;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
