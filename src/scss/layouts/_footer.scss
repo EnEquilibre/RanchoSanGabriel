@@ -1,4 +1,4 @@
-.footer {
+.footer-principal {
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -21,4 +21,8 @@
             color: $blanco;
         }
     }
+} 
+
+.footer {
+    text-align: center;
 }

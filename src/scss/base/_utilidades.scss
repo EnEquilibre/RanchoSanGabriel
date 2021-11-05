@@ -10,8 +10,19 @@
     margin: 0 auto;
 }
 
+.webp {
+    .principal {
+        background-image: url(../../../build/img/imagen-fondo.webp);
+    }
+}
+
+.no-webp {
+    .principal {
+        background-image: url(../../../src/img/imagen-fondo.jpeg);
+    }
+}
+
 .principal {
-    background-image: url(../../../build/img/imagen-fondo.webp);
     background-position-x: center;
     @include desktop {
         //background-repeat: no-repeat;
@@ -19,14 +30,10 @@
     }
 }
 
-// .secundario{ 
-//     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#822e81+1,9fc552+100&0.1+0,0.57+100 */
-//     background: -moz-linear-gradient(top,  rgba(130,46,129,0.1) 0%, rgba(130,46,129,0.1) 1%, rgba(159,197,82,0.57) 100%); /* FF3.6-15 */
-//     background: -webkit-linear-gradient(top,  rgba(130,46,129,0.1) 0%,rgba(130,46,129,0.1) 1%,rgba(159,197,82,0.57) 100%); /* Chrome10-25,Safari5.1-6 */
-//     background: linear-gradient(to bottom,  rgba(130,46,129,0.1) 0%,rgba(130,46,129,0.1) 1%,rgba(159,197,82,0.57) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-//     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a822e81', endColorstr='#919fc552',GradientType=0 ); /* IE6-9 */
-// }
-
 .secundario {
     background-color: rgba(130,46,129,0.1);
+}
+
+.ocultar {
+    visibility: hidden;
 }

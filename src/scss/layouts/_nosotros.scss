@@ -1,0 +1,60 @@
+.nosotros {
+    margin-bottom: 2rem;
+    .nosotros--img {
+        img {
+            width: 50rem;
+        }
+        text-align: center;
+    }
+    .nosotros--info { 
+        h2 {
+            font-size: 4rem;
+            color: $verde_obscuro;
+            margin: 0;
+            margin-left: 2rem;
+        }
+        p {
+            font-size: 1.7rem;
+            padding: 2rem;
+            text-align: center;
+            line-height: 3rem;
+        }           
+    }
+    @include tablet {
+        @include grid(2,1rem);
+        .nosotros--info {
+            p {
+                text-align: left;
+            }
+        }
+    }
+}
+
+.mv {
+    padding: .5rem 0;
+    @include franja($verde_claro) {
+        width: 100%;
+    }
+    margin-bottom: 2rem;
+}
+
+.contenedor-mv {
+    @include tablet {
+            display: flex;
+    }
+    .mv--info {
+        padding: 1rem 2rem;
+        margin:2rem 1rem;
+        border-radius: 1rem;
+        background-color: rgba($color: #fff, $alpha: 0.2);
+        h3 {
+            font-size: 2rem;
+            text-align: center;
+        }
+        p {
+            font-size: 1.5rem;
+            text-align: center;
+            line-height: 2.5rem;
+        }
+    }
+}

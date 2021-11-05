@@ -1,0 +1,25 @@
+.voluntariados {
+    @include grid(1, 3rem);
+    .vol-foto2 {
+        grid-row: 4 / 5;
+    }
+    @include telefono {
+        @include grid(2, 3rem);
+        .vol-foto2 {
+            grid-row: auto;
+        }
+        img {
+            min-width: 40rem;
+        }
+    }
+}
+
+.vol-info {
+    h2 {
+        font-size: 2.5rem;
+    }
+    p {
+        font-size: 1.8rem;
+        line-height: 1.5;
+    }
+}

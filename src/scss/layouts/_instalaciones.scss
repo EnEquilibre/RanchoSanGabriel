@@ -1,0 +1,13 @@
+.instalaciones {
+    p {
+        font-size: 2rem; 
+    }
+    .instalaciones-img {
+        @include telefono {
+            display: flex;
+            picture {
+                margin: 1rem;
+            }
+        }
+    }
+}

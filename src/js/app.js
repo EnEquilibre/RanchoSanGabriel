@@ -1,5 +1,5 @@
-document.addEventListener('DOMContentLoaded', () => iniciarApp());
+// document.addEventListener('DOMContentLoaded', () => iniciarApp());
 
-const iniciarApp = () => {
-    mostrarActividades();
-}
+// const iniciarApp = () => { 
+//     // mostrarActividades();
+// }

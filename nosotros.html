@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" class="secundario">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,11 +9,14 @@
     <link rel="stylesheet" href="build/css/app.css">
     <link rel="icon" type="image/webp" href="./build/img/logo-sin-fondo.webp">
 </head>
-<body>
+<body class="secundario">
     <header class="contenedor header">
         <div class="contenedor-logo">
             <a href="./index.html">
-                <img class="logo" src="./build/img/logo-sin-fondo.webp" alt="Logotipo UMA Rancho San Gabriel">
+                <picture>
+                    <source srcset="build/img/logo-sin-fondo.webp" type="image/webp">
+                    <img class="logo" src="src/img/logo-sin-fondo.png" alt="Logotipo UMA Rancho San Gabriel">
+                </picture>
             </a>
         </div>
         <a href="#" class="menu-ham--icono" id="menu-ham--icono">
@@ -44,11 +47,15 @@
         </div>
         
         <div class="nosotros--img">
-            <img src="./build/img/paisaje1.webp" alt="">
+            <picture>
+                <source srcset="build/img/imagen-galeria-3.webp" type="image/webp">
+                <img src="src/img/imagen-galeria-3.jpg" alt="">
+            </picture>
+            
         </div>
     </section>
     
-    <section class="mv">
+    <div class="mv">
         <div class="contenedor-inicio contenedor-mv">
             <div class="mv--info">
                 <h3>Misión</h3>
@@ -65,8 +72,27 @@
                 </p>
             </div>
         </div>
+    </div>
+
+    <section class="contenedor nosotros">
+        <div class="nosotros--info">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque porro aspernatur vel aut sunt fugit molestias, debitis veniam similique. Praesentium quidem blanditiis tempora nihil laborum quas eos quae sit ad acumque a rerum sint!
+            Tenetur quasi adipisci corrupti quod tempora nulla eveniet necessitatibus at numquam ducimus deserunt, itaque aliquam et odit dolores delectus, nostrum reprehenderit accusantium? Voluptates, blanditiis optio ullam suscipit tempore voluptatibus possimus!
+            Perspiciatis.</p> 
+        </div>
+        
+        <div class="nosotros--img">
+            <picture>
+                <source srcset="build/img/imagen-galeria-1.webp" type="image/webp">
+                <img src="src/img/imagen-galeria-1.jpg" alt="">
+            </picture>
+        </div>
     </section>
     
-    <script src="./build/js/bundle.js"></script>
+    <footer class="footer">
+        <p class="copyright">Rancho San Gabriel &copy;</p>
+    </footer>
+
+    <script src="build/js/bundle.js"></script>
 </body>
 </html>

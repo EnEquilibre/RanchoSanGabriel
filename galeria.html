@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" class="secundario">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,11 +9,14 @@
     <link rel="stylesheet" href="build/css/app.css">
     <link rel="icon" type="image/webp" href="./build/img/logo-sin-fondo.webp">
 </head>
-<body>
+<body class="secundario body-galeria">
     <header class="contenedor header">
         <div class="contenedor-logo">
             <a href="./index.html">
-                <img class="logo" src="./build/img/logo-sin-fondo.webp" alt="Logotipo UMA Rancho San Gabriel">
+                <picture>
+                    <source srcset="build/img/logo-sin-fondo.webp" type="image/webp">
+                    <img class="logo" src="src/img/logo-sin-fondo.png" alt="Logotipo UMA Rancho San Gabriel">
+                </picture>
             </a>
         </div>
         <a href="#" class="menu-ham--icono" id="menu-ham--icono">
@@ -34,6 +37,16 @@
             </ul>
         </nav>
     </header>
+
+    <div class="seccion-galeria contenedor">
+        <div>
+            <h2>Aventúrate en <span>Rancho San Gabriel</span></h2>
+        </div>
+        <div class="galeria"></div>
+    </div>
+    <footer class="footer">
+        <p class="copyright">Rancho San Gabriel &copy;</p>
+    </footer>
     <script src="./build/js/bundle.js"></script>
 </body>
 </html>

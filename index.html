@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" class="principal">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,10 +9,13 @@
     <link rel="stylesheet" href="build/css/app.css">
     <link rel="icon" type="image/webp" href="./build/img/logo-sin-fondo.webp">
 </head>
-<body>
+<body class="principal">
     <header class="contenedor-inicio header header-principal">
         <div class="contenedor-logo">
-            <img class="logo" src="./build/img/logo-sin-fondo.webp" alt="Logotipo UMA Rancho San Gabriel">
+            <picture>
+                <source srcset="build/img/logo-sin-fondo.webp" type="image/webp">
+                <img class="logo" src="src/img/logo-sin-fondo.png" alt="Logotipo UMA Rancho San Gabriel">
+            </picture>
         </div>
         
         <nav>
@@ -25,7 +28,7 @@
             </ul>
         </nav>
     </header>
-    <footer class="footer">
+    <footer class="footer-principal">
         <div class="contenedor-inicio div-footer">
             <a href="https://www.facebook.com/UMA-Rancho-San-Gabriel-100564192281017">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="38" height="38" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -45,5 +48,7 @@
             </a>
         </div>
     </footer>
+    
+    <script src="build/js/bundle.js"></script>
 </body>
 </html>

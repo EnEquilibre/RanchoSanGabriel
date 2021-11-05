@@ -1,0 +1,71 @@
+.seccion-galeria {
+    @include telefono {
+        @include grid(2,1rem)
+    }
+    margin-bottom: 2rem;
+    h2 {
+        font-size: 5rem;
+        color: $verde_obscuro;
+        font-weight: $media;
+        @include telefono {
+            margin-top: 10rem;
+        }
+    }  
+    span{ 
+        display: block;
+        color: $cafe;
+        font-weight: bold;
+    }
+}
+.galeria {
+    @include grid(3, 1rem);
+    .img-individual {
+        width: 100%;
+        height: 15rem;
+        overflow: hidden;
+        img {
+            max-width: 200px;
+        }
+        @include telefono {
+            min-width: 15rem;
+        }    
+    }
+    
+}
+
+.contenedor-foto {
+    position: relative;
+    height: 60rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    img {
+        max-height: 100%;
+    }
+    .cerrar-foto {
+        align-self: flex-start;
+        opacity: 0.5;
+        font-size: 1.5rem;
+        position: absolute;
+        top: 1px;
+    }
+    button {
+        background-color: transparent;
+        border: none;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.botones-galeria {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    button {
+        color: $blanco;
+        font-size: 3rem;
+    }
+}

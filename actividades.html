@@ -13,7 +13,10 @@
     <header class="contenedor header">
         <div class="contenedor-logo">
             <a href="./index.html">
-                <img class="logo" src="./build/img/logo-sin-fondo.webp" alt="Logotipo UMA Rancho San Gabriel">
+                <picture>
+                    <source srcset="build/img/logo-sin-fondo.webp" type="image/webp">
+                    <img class="logo" src="src/img/logo-sin-fondo.png" alt="Logotipo UMA Rancho San Gabriel">
+                </picture>
             </a>
         </div>
         <a href="#" class="menu-ham--icono" id="menu-ham--icono">
@@ -34,9 +37,14 @@
             </ul>
         </nav>
     </header>
-    <section class="contenedor contenedor-actividades" id="actividades">
-
+    <section class="contenedor">
+        <p class="act-parrafo">En Rancho San Gabriel queremos brindarte experiencias únicas. Ven y disfruta de nuestras actividades.</p>
+        <div class="contenedor-actividades" id="actividades"></div>
     </section>
-    <script src="./build/js/bundle.js"></script>
+    <footer class="footer">
+        <p class="copyright">Rancho San Gabriel &copy;</p>
+    </footer>
+    
+    <script src="build/js/bundle.js"></script>
 </body>
 </html>

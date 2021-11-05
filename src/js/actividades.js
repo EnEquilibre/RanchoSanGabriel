@@ -71,3 +71,10 @@ const mostrarInfoActividad = (actividad, informacion, status) => {
     const body = document.querySelector('body');
     body.appendChild(overlay);
 };
+
+// Para llamar a la funcion mostrarActividades una vez que se carge la pestaña de actividades
+const bodyActividades = document.querySelector('.body-actividades');
+
+if (bodyActividades) {
+   bodyActividades.onload = mostrarActividades; 
+}
