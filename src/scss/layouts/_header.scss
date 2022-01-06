@@ -10,10 +10,15 @@
     }
     @include tablet {
         display: flex;
-        align-items: flex-end;
+        //align-items: flex-end;
         justify-content: space-between;
         .contenedor-logo {
             flex-shrink: 0;
+        }
+        .id-nav {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
     }
 }
@@ -93,5 +98,24 @@
                 padding: 1rem;
             }
         }
+    }
+}
+
+.idiomas {
+    display: flex;
+    justify-content: flex-end;
+    ul {
+        list-style: none;
+        display: flex;
+        li {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            margin-left: 20px;
+        }
+    }
+    .bandera {
+        width: 25px;
+        margin-right: 5px;
     }
 }

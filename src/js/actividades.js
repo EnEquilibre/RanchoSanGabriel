@@ -2,7 +2,7 @@ const contenedorActividades = document.getElementById('actividades');
 
 const mostrarActividades = async () => {
     try {
-        const actividadesInfo = await fetch('./actividades.json');
+        const actividadesInfo = await fetch('actividades.json');
         const actividadesJson = await actividadesInfo.json();
         const {actividades} = actividadesJson;
         const fragment = document.createDocumentFragment();
@@ -13,7 +13,11 @@ const mostrarActividades = async () => {
             const nombreActividad = document.createElement('H2');
             const imagenActividad = document.createElement('IMG');
             
-            imagenActividad.setAttribute('src',`./build/img/actividad-${id}.webp`);
+            if (language==='es') {
+                imagenActividad.setAttribute('src',`build/img/actividad-${id}.webp`);
+            } else {
+                imagenActividad.setAttribute('src',`../build/img/actividad-${id}.webp`);
+            }
             imagenActividad.dataset.imagenId = id;
             nombreActividad.textContent = actividad;
 

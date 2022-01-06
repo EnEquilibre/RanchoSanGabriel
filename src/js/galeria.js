@@ -64,10 +64,16 @@ const llenarGaleria = () => {
     const webp = document.querySelector('.webp');
 
     let url = 'src/img/';
+    if (language!=='es') {
+        url = '../'+url;
+    }
     let format = '.jpg';
 
     if (webp) {
         url = 'build/img/';
+        if (language!=='es') {
+            url = '../'+url;
+        }
         format = '.webp';
     } 
     const fragment = document.createDocumentFragment();
